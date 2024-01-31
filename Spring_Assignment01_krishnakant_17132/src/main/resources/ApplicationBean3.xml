@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="customerData" class="com.nucleus.training.question3.Customer">
+        <constructor-arg index="0" value="202" />
+        <constructor-arg index="1" value="Jane Doe (Constructor)" />
+        <constructor-arg index="2" value="6000.0" />
+        <constructor-arg index="3" value="Doctor" />
+        <constructor-arg index="4" value="Surgeon" />
+        <constructor-arg index="5" value="XYZ Hospital" />
+<!--        Qouestion03 1 a-->
+        <constructor-arg name="phoneNumbers" >
+            <list>
+                <value>357575375</value>
+                <value>9887837467</value>
+                <value>808973565</value>
+            </list>
+        </constructor-arg>
+        <!--        Qouestion03 1 b-->
+        <property name="emailAdressSet">
+            <list>
+            <value>kp@gmail.com</value>
+                <value>kp121@gmail.com</value>
+                <value>k51@gmail.com</value>
+            </list>
+
+
+        </property>
+    </bean>
+
+</beans>
