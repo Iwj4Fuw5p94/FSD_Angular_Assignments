@@ -1,0 +1,24 @@
+<h2>Total Matches by Country</h2>
+
+<!-- <div>
+  <label for="countryInput">Enter Country:</label>
+  <input type="text" id="countryInput" [(ngModel)]="country">
+  <button (click)="fetchTotalMatches()">Get Total Matches</button>
+</div> -->
+<div>
+  <label for="countryInput">Enter Country:</label>
+  <input type="text" id="countryInput" [(ngModel)]="country" name="country" required minlength="2" maxlength="50" #countryInputRef="ngModel">
+  <span *ngIf="countryInputRef.invalid && (countryInputRef.dirty || countryInputRef.touched)" class="error">
+    <span style="color: brown;" *ngIf="countryInputRef.errors?.['required']">Country is required. </span>
+    <span style="color: red;" *ngIf="countryInputRef.errors?.['minlength']">Country must be at least 2 characters long. </span>
+    <span style="color: red;" *ngIf="countryInputRef.errors?.['maxlength']">Country cannot be more than 50 characters long. </span>
+  </span>
+  <button (click)="fetchTotalMatches()" [disabled]="countryInputRef.invalid">Get Total Matches</button>
+</div>
+
+  
+
+<div *ngIf="totalMatches !== null">
+  <p>Total matches for {{ country }}: {{ totalMatches }}</p>
+
+</div>

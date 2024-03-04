@@ -1,0 +1,64 @@
+<!-- <form class="container col-md-10">
+<div class="form">
+  <p>displayall works!</p>
+  <table>
+    <thead style="color: rgb(72, 92, 92); background-color: antiquewhite;">
+      <tr>
+        <th>Player ID</th>
+        <th>Name</th>
+        <th>Jersey Number</th>
+        <th>Role</th>
+        <th>Total Matches</th>
+        <th>Team Name</th>
+        <th>Country</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of players">
+        <td>{{ player.playerId }}</td>
+        <td>{{ player.playerName }}</td>
+        <td>{{ player.jerseyNumber }}</td>
+        <td>{{ player.role }}</td>
+        <td>{{ player.totalMatches }}</td>
+        <td>{{ player.teamName }}</td>
+        <td>{{ player.country }}</td>
+        <td>{{ player.playerDescription }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</form> -->
+
+
+<form class="player-form">
+  <div class="form">
+    <p>displayall works!</p>
+    <table class="player-table">
+      <thead class="table-header">
+        <tr>
+          <th>Player ID</th>
+          <th>Name</th>
+          <th>Jersey Number</th>
+          <th>Role</th>
+          <th>Total Matches</th>
+          <th>Team Name</th>
+          <th>Country</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let player of players">
+          <td>{{ player.playerId }}</td>
+          <td>{{ player.playerName }}</td>
+          <td>{{ player.jerseyNumber }}</td>
+          <td>{{ player.role }}</td>
+          <td>{{ player.totalMatches }}</td>
+          <td>{{ player.teamName }}</td>
+          <td>{{ player.country }}</td>
+          <td>{{ player.playerDescription }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>
