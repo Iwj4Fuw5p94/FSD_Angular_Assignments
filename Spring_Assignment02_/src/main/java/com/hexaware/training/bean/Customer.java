@@ -1,4 +1,4 @@
-package com.nucleus.training.bean;
+package com.hexawre.training.bean;
 
 public class Customer {
     private int id;

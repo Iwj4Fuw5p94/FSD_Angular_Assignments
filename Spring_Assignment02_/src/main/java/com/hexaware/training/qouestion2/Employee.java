@@ -1,4 +1,4 @@
-package com.nucleus.training.qouestion2;
+package com.hexawre.training.qouestion2;
 
 public class Employee {
     private int empid;

@@ -1,4 +1,4 @@
-package com.nucleus.training.question3;
+package com.hexaware.training.question3;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
