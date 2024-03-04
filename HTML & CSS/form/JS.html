@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+    <link rel="stylesheet" href="stylejs.css" />
+</head>
+
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Policy Setup</a></li>
+            <li><a href="#">Parameters</a></li>
+            <li><a href="#">Applicaiton</a></li>
+            <li><a href="#">Receipt</a></li>
+            <li><a href="#">Accounting</a></li>
+            <li><a href="#">Customer Service</a></li>
+            <li><a href="#">Report</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header class="tab-container" id="tab-container">
+            <div class="tab-option active-tab-option" id="tab-containerCustomer" >Customer Information</div>
+            <div class="tab-option non-active-tab-option " id="tab-containerLoan">Loan Information</div>
+            <div class="container-extension" />
+        </header>
+        <section class="container container-hidden" id="loan-container" >
+            <div class="inputs-container">
+                <div class="input-field">
+                    <label for="loan_application_no">Loan Applicaiton No</label>
+                    <input id="loan_application_no" class="input-text" name="loan_application_no" type="text" />
+                </div>
+                <div class="input-field">
+                    <label for="product_type">Product Type</label>
+                    <select id="product_type" name="product_type">
+                        <option selected disabled>Auto Loan</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label for="product">Product</label>
+                    <select id="product" name="product">
+                        <option selected disabled>Select One Option</option>
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label for="loan_amount">Loan Amount Requested</label>
+                    <input type="number" class="input-text" id="loan_amount" name="loan_amount" />
+                </div>
+                <div class="input-field">
+                    <label for="tenure">Tenure (Months)</label>
+                    <input type="number" class="input-text" id="tenure" name="tenure" />
+                </div>
+                <div class="input-field">
+                    <label for="rate">Rate</label>
+                    <input type="number" class="input-text" id="rate" name="rate" />
+                </div>
+                <div class="input-field">
+                    <label for="agreement_date">Agreement Date</label>
+                    <input type="date" class="input-text" id="agreement_date" name="agreement_date" />
+                </div>
+                <div class="input-field">
+                    <label for="installment_due_date">Installment Due Date</label>
+                    <input type="date" class="input-text" id="installment_due_date" name="installment_due_date" />
+                </div>
+            </div>
+        </section>
+        <section class="container " id="customer-container">
+            <div class="personal-infomration">
+            <header><h3>Personal Information</h3></header>
+            <div class="inputs-container">
+                <div class="input-field">
+                    <label for="gender" class="mandetory-field">Gender</label>
+                    <select id="gender" name="product_type" class="input-mandetory">
+                        <option>Female</option>
+                        <option>Male</option>
+                    
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label for="first-name" class="mandetory-field">First Name</label>
+                    <input id="first-name " class="input-text input-mandetory" name="first_name" type="text" />
+                </div>
+                
+                <div class="input-field">
+                    <label for="last-name" class="mandetory-field">Last Name</label>
+                    <input type="text" class="input-text input-mandetory" id="full-name" name="full-name" />
+
+                </div>
+                <div class="input-field">
+                    <label for="full-name" class="mandetory-field">Full Name</label>
+                    <input type="text" class="input-text input-mandetory" id="full-name" name="full-name" />
+                </div>
+                <div class="input-field">
+                    <label for="nationality">Nationality</label>
+                    <select id="nationality" name="nationality">
+                        <option selected disabled>Indian</option>
+                    
+                    </select>
+                </div>
+                <div class="input-field">
+                    <label for="full-name" class="mandetory-field">Date of Birth</label>
+                    <input type="text" class="input-text input-mandetory" id="dob" name="dob" />
+                </div>
+              
+            </div>
+            </div>
+            <div class="employee-details">
+                <header><h3>Employee Details</h3></header>
+                <div class="inputs-container">
+                   
+                    <div class="input-field">
+                        <label for="occupation-type" class="mandetory-field">occupation Type</label>
+                        <select id="occupation-type" name="occupation-type" class="input-mandetory">
+                            <option selected disabled>Select One Option</option>
+                            <option>IT</option>
+                        </select>
+                    </div>
+                    <div class="input-field">
+                        <label for="total-workexperience">Total Work Experience</label>
+                        <input id="total-workexperience" class="input-text" name="total_workexperience" type="text" />
+                    </div>
+                    <div class="input-field">
+                        <label for="organization-name">Organization Name</label>
+                        <select id="organization-name" name="organization-name">
+                            <option selected disabled>Select One Option</option>
+                        </select>
+                    </div>
+                   
+                </div>
+                </div>
+                <div class="address-infomration">
+                    <header><h3>Address Information</h3></header>
+                    <div class="inputs-container">
+                        <div class="input-field">
+                            <label for="house-number">House No</label>
+                            <input id="house-number" class="input-text" name="house-number" type="text"  />
+                        </div>
+                        <div class="input-field">
+                            <label for="country">Country</label>
+                            <select id="country-dropdown" name="country">
+                                <option selected disabled>Select One Option</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="state">State</label>
+                            <select id="state-dropdown" name="state">
+                                <option selected disabled>Select One Option</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="city">City</label>
+                            <select id="city-dropdown" name="city">
+                                <option selected disabled>Select One Option</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label for="house-number">House No</label>
+                            <input id="house-number" class="input-text" name="house-number" type="text"  />
+                        </div>
+
+                        
+                    </div>
+                    </div>
+            
+            
+            
+            
+        </div>
+        </section>
+        <hr />
+        <footer>
+            <input class="saveBtn" type="submit" id="customerForm" value="submit" onclick="handleOnSubmit()" />
+            <button>Next</button>
+        </footer>
+    </main>
+
+    <script>
+
+    //TAB SWITCHING
+        let customerContainer = document.getElementById("tab-containerCustomer")
+        console.log(customerContainer)
+
+        let loanContainer = document.getElementById("tab-containerLoan")
+            console.log(loanContainer)
+
+        let loanContainerBody = document.getElementById("loan-container")
+        let customerContainerBody = document.getElementById("customer-container")
+    
+
+         customerContainer.addEventListener('click', function clicked() {
+
+                customerContainer.classList.toggle('active-tab-option');
+                customerContainer.classList.toggle('non-active-tab-option');
+
+
+                loanContainer.classList.toggle('active-tab-option')
+                loanContainer.classList.toggle('non-active-tab-option')
+
+
+                customerContainerBody.classList.toggle('container-hidden')
+                loanContainerBody.classList.toggle('container-hidden')
+
+
+            });
+
+            loanContainer.addEventListener('click', function clicked() {
+
+                customerContainer.classList.toggle('active-tab-option');
+                customerContainer.classList.toggle('non-active-tab-option');
+
+
+                loanContainer.classList.toggle('active-tab-option')
+                loanContainer.classList.toggle('non-active-tab-option')
+                
+                customerContainerBody.classList.toggle('container-hidden')
+                loanContainerBody.classList.toggle('container-hidden')
+
+
+
+            });
+
+    //ALL THE VALIDATIONS
+                  
+    function handleOnSubmit(e){
+
+        //VALIDATIONS
+
+        let fullName = document.getElementById("full-name").value;
+
+        let checkMandetoryFieldValidator = checkMandatory();
+        let checkDateFormatValidator = checkDateFormat();
+        let checkNumericTypeValidator = checkNumericType();
+        let checkWorkExperienceValidator = checkWorkExperience();
+        let validateName = isNameValid(fullName);               //validating full name. we can also validate other fields by getting the desired field value
+
+        console.log(checkMandetoryFieldValidator, checkDateFormatValidator, checkNumericTypeValidator, validateName, checkWorkExperienceValidator)
+
+        if(checkNumericTypeValidator && checkMandetoryFieldValidator && checkDateFormatValidator&& validateName && checkWorkExperienceValidator){
+            alert("Submitted");
+            e.target.submit
+        }
+
+        console.log("not submitted")
+
+      
+
+        
+
+        function checkMandatory() {
+        console.log("clicked")
+            var input = document.getElementsByClassName("input-mandetory");
+            for(let i = 0; i<input.length; i++){
+                if (input[i].value == "") {
+            alert("PLEASE FILL MANDATORY FIELDS")
+
+                return false;
+            }
+            }
+            return true;
+            
+        };
+
+        function checkDateFormat() {
+         const Input = document.getElementById('dob').value;
+            if (isNaN(new Date(Input))) {
+
+            return true;
+    }else{
+                alert("THE DATE FORMAT HAS TO BE DD/MM/YYYY")
+                return false;
+
+    }
+    }
+
+        function checkNumericType(){
+            let Input = document.getElementById("house-number").value;
+            console.log(Input)
+            console.log(typeof Input)
+
+                for (let i = 0; i < Input.length; i++) {
+                    let ascii = Input.charCodeAt(i);
+                    if (ascii < 48 || ascii > 57) {
+                        alert("HOUSE NUMBER SHOULD BE NUMERIC TYPE")
+                        return false;
+
+                    }
+                }
+                return true;
+            }
+
+    
+
+        
+
+         function isNameValid(name) {
+
+            if (name.length < 3) {
+                alert("CANNOT BE LESS THAN 3 LETTER")
+
+                return false;
+            }
+
+            for (let i = 0; i < name.length; i++) {
+
+                let charAscii = name.charCodeAt(i);
+
+                if (!(charAscii > 64 && charAscii < 91) && !(charAscii > 96 && charAscii < 123))
+                    return false;
+            }
+
+            return true;
+        }
+
+        function checkWorkExperience(){
+            let workExperience = document.getElementById("total-workexperience").value;
+            if(workExperience <0){
+                alert("WORK EXPERIENCE CANNOT BE NEGATIVE")
+                return false
+            }
+            return true
+
+        }
+
+
+
+
+
+    }
+
+    
+    //COUNTRY STATE CITY OPTIONS
+        const countryChosen = document.getElementById('country-dropdown');
+        const stateChosen = document.getElementById('state-dropdown');
+        const cityChosen = document.getElementById('city-dropdown');
+         const listData = {
+
+            UK: {
+                states: ["CAMBRIDGESHIRE", "LONDON", "CORNWALL"],
+                cities: {
+                    "CAMBRIDGESHIRE": ["CAMBRIDGE", "FENLAND", "EAST CAMBRIDGESHIRE"],
+                    "LONDON": ["LONDON", "MANCHESTER", "TOTENHAM"],
+                    "CORNWALL": ["BODMIN", "PENZANCE"]
+                },
+            },
+
+
+            USA: {
+                states: ["NEW YORK", "FLORIDA", "CALIFORNIA", "NAVEDA"],
+                cities: {
+                    "NEW YORK": ["BROOKLYN", "BUFFALO", "ALBANY", "LAKE PLACID", "QUEENS"],
+                    "FLORIDA": ["MIAMI", "MELBOURNE", "ORLANDO", "TAMPA"],
+                    "CALIFORNIA": ["SACRAMENTO", "HOLLYWOOD", "SAN DIEGO", "LOS ANGELES"],
+                    "NAVEDA": ["LAS VEGAS", "GOLDFIELD", "VIRGINIA CITY"]
+                }
+
+
+            },
+            INDIA: {
+                states: ["WEST BENGAL", "UTTARAKHAND", "GUJARAT", "TAMIL NADU"],
+                cities: {
+                    "WEST BENGAL": ["BARDHAMAN", "KOLKATA", "DURGAPUR", "ASANSOL", "SILIGURI", "BAGDOGRA", "JALPAIGURI", "KALYANI"],
+                    "UTTARAKHAND": ["ROORKEE", "HARIDWAR", "NAINITAL", "RISHIKESH", "CHAMOLI", "DEHRADUN", "ALMORA", "MUSOORIE"],
+                    "GUJARAT": ["AHMEDABAD", "VADODARA", "GANDHINAGAR", "SURAT"],
+                    "TAMIL NADU": ["CHENNAI", "RAMESHWARAM", "VELLORE", "COIMBATOOR", "SALEM"]
+                }
+            }
+        }
+            
+         console.log(countryChosen)
+         for(const key in listData){
+             const countryOption = document.createElement('option');
+             countryOption.text = key;
+             countryOption.value = key;
+             countryChosen.appendChild(countryOption);
+         }
+          countryChosen.onchange = function () {
+                const country = countryChosen.value;
+                const states = listData[country].states;
+                states.forEach(state => {
+                    console.log(state)
+                    const stateOption = document.createElement('option');
+                    stateOption.text = state;
+                    stateOption.value = state;
+                    stateChosen.appendChild(stateOption);
+                });
+                stateChosen.onchange=function(){ state = stateChosen.value;
+                const cities = listData[country].cities[state];
+                cities.forEach(city => {
+                    console.log(city);
+                  const cityOption = document.createElement('option');
+                  cityOption.text = city;
+                  cityOption.value = city;
+                  cityChosen.appendChild(cityOption);
+              });
+            }
+            }
+            
+         </script>
+
+
+
+</body>
+
+</html>
+
+
+
